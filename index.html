@@ -14,24 +14,24 @@
 <body>
     <h1>to do list</h1>
 
-    <main>
-        <!-- <section>
-            <h5 id="task-title">task</h5>
+    <ul id="main">
+        <li id="card">
+            <h5 id="task-title">@title</h5>
             <div class="td-btn">
-                <i class="far fa-trash-alt fa-lg align-middle"></i>
-                <i class="far fa-check-circle  fa-lg align-middle"></i>
+                <span id="delete">X</span>
+                <span id="done">V</span>
             </div>
-        </section> -->
-    </main>
+        </li>
+    </ul>
 
     <script id="placeholder-card" type="text/html">
-        <section id="card">
-            <h5 id="task-title">@titulo</h5>
+        <li id="card">
+            <h5 id="task-title">@title</h5>
             <div class="td-btn">
-                <i class="far fa-trash-alt fa-lg align-middle"></i>
-                <i class="far fa-check-circle  fa-lg align-middle"></i>
+                <span id="delete">X</span>
+                <span id="done">V</span>
             </div>
-        </section>
+        </li>
     </script>
 
     <form>
@@ -52,8 +52,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-    <script src="main.js"></script>
-    <script src="https://kit.fontawesome.com/73767e8840.js" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
 </body>
 
 </html>
