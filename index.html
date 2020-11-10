@@ -5,53 +5,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <title>to do list</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <h1>to do list</h1>
-
-    <ul id="main">
-        <li id="card">
-            <h5 id="task-title">@title</h5>
-            <div class="td-btn">
-                <span id="delete">X</span>
-                <span id="done">V</span>
-            </div>
-        </li>
-    </ul>
-
-    <script id="placeholder-card" type="text/html">
-        <li id="card">
-            <h5 id="task-title">@title</h5>
-            <div class="td-btn">
-                <span id="delete">X</span>
-                <span id="done">V</span>
-            </div>
-        </li>
-    </script>
+    <header>
+        <h1>lista de tarefas</h1>
+    </header>
 
     <form>
-        <div class="new-form">
-            <div class="new-task">
-                <input type="text" placeholder="escreva a sua nova tarefa" id="input">
-            </div>
-            <button type="submit" id="btn">adicionar</button>
-        </div>
+        <input type="text" placeholder="escreva a sua nova tarefa" class="todoInput">
+        <button type="submit" class="todoBtn">
+            <i class="fas fa-plus-square"></i>
+        </button>
     </form>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
+    <div class="todoContainer">
+        <ul class="todoList"></ul>
+    </div>
+
+    <footer>
+        <p class="para">
+                copyright © 2020 todos os direitos reservados | este site foi feito com <span
+                    style="color: #ff4f5a;">❤</span> por tati alves
+            </p>
+    </footer>
+
     <script src="app.js"></script>
 </body>
 
